@@ -1,7 +1,7 @@
 <?php 
 	if($_POST) {
 
-		$to = "testemail@gmail.com"; // Your email here
+		$to = "sharmu6@mcmaster.ca"; // Your email here
 		$subject = 'Message from my website'; // Subject message here
 
 	}
