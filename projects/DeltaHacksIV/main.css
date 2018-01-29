@@ -1,0 +1,76 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+}
+
+html{ 
+
+}
+
+header {  
+  background-color: white; 
+}
+
+h1 { 
+  font-family: "Oswald","Arial Narrow", Arial, sans-serif;
+  color: #248CBA;
+  font-weight: 400; 
+  font-size: 6rem; 
+  text-align: center; 
+  margin-top: 10%; 
+  margin-bottom: 10%; 
+} 
+
+.main-intro { 
+  width: 100%; 
+  height: 800px; 
+  background-color: black; 
+  margin: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   background: url("http://manteconpartners.com/wp-content/uploads/2017/07/McMaster-University-Engineering-Technology-Building.jpg") no-repeat center center;
+  background-size: cover; 
+ }
+  
+
+.button {  
+  color: white; 
+  font-family: "Oswald","Arial Narrow", Arial, sans-serif;
+  text-decoration:  none;
+  font-size:3.5rem; 
+  padding: 1% 3%; 
+  background-color: #248CBA;
+  border-radius: 5%; 
+}
+
+.post-intro { 
+  display: flex; 
+   align-items: center;
+  justify-content: center;
+}
+
+.deltaPhoto { 
+  margin: 15% auto; 
+  width: 50%; 
+}
+
+.list { 
+  font-family: "Oswald","Arial Narrow", Arial, sans-serif;
+   display: flex; 
+   align-items: center;
+  justify-content: center;
+  margin-bottom: 15%; 
+}
+
+ul { 
+   list-style-type: none;
+  	padding: 0; 
+  	margin: 0; 
+  font-size: 1.25rem; 
+}
+
+
+
+
+  

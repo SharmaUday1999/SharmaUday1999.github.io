@@ -1,0 +1,49 @@
+<html>
+	<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
+	<script src="js/aframe-ar.js"></script>
+	<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+	<script src="js/index.js"></script> 
+  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script> 
+  <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script> 
+	<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' >
+      <a-assets>
+                <a-asset-item id="part1ui-obj" src="assets/Part1UI2.obj"></a-asset-item>
+                <a-asset-item id="part1ui-mtl" src="assets/Part1UI.mtl"></a-asset-item>
+                <a-asset-item id="warninglabel-obj" src="assets/WARNINGLABEL.obj"></a-asset-item>
+                <a-asset-item id="warninglabel-mtl" src="assets/WARNINGLABEL.mtl"></a-asset-item>
+                <a-asset-item id="plantStatusPage-obj" src="assets/plantStatusPage1.obj"></a-asset-item>
+                <a-asset-item id="plantStatusPage-mtl" src="assets/plantStatusPage1.mtl"></a-asset-item>
+            </a-assets>
+    <a-marker type='pattern' url='patterns/Delta.patt'> 
+			 <a-entity obj-model="obj: #part1ui-obj; mtl: #part1ui-mtl" scale="0.03 0.03 0.03"  position='0 -7 0 '  rotation="-90 0 0 0"></a-entity>
+    </a-marker>
+		<a-marker preset="kanji">
+			 <a-entity obj-model="obj: #warninglabel-obj; mtl: #warninglabel-mtl" scale="0.03 0.03 0.03"  position='0 -7 0 '  rotation="-90 0 0 0"></a-entity>
+		</a-marker>
+      <a-marker preset='hiro'> 
+          <a-entity geometry="primitive: plane; height: 1.125; width: 2" material="shader:gif;src:url(assets/image.gif);"  rotation="-90 0 0 0"></a-entity>
+    </a-marker>
+      <a-marker type='pattern' url='patterns/AM.patt'> 
+          <a-entity geometry="primitive: plane; height: 1.125; width: 2" material="shader:gif;src:url(assets/safetyVideo.gif);"  rotation="-90 0 0 0"></a-entity>
+    </a-marker>
+      
+      <a-marker type='pattern' url='patterns/QQ.patt'> 
+        <a-entity obj-model="obj: #plantStatusPage-obj; mtl: #plantStatusPage-mtl" scale="0.03 0.03 0.03"  position='0 -7 0 '  rotation="-90 0 0 0"></a-entity>
+    </a-marker>
+      
+      
+      
+      
+    <!-- define a simple camera -->
+    <a-entity camera>
+			<a-entity cursor="fuse: true; fuseTimeout: 1250"
+					position="0 0 -1"
+					geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
+					material="color: black; shader: flat">
+			</a-entity>
+    </a-entity>
+  	</a-scene>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	</body>
+</html>
