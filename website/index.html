@@ -3,7 +3,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
      
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -353,9 +356,8 @@ img {
   color: rgba(0, 0, 0, 0.4);
 }
 </style>
-<script src="https://raw.github.com/RinayShah/rinayshah.github.io/master/jquery-3.3.1.min.js"></script>
 <script>
-	jQuery(document).ready(function() {
+	$(document).ready(function () {
   jQuery('.skillbar').each(function() {
     jQuery(this).find('.skillbar-bar').animate({
       width: jQuery(this).attr('data-percent')
