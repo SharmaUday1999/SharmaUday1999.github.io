@@ -1,17 +1,18 @@
+# rinayshah.github.io
 <!DOCTYPE html>
  <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="/animations.css" type="text/css">
-     
 <body background="http://www.westsideflats.com/wp-content/uploads/2014/05/1-WSF-photoshop-Website-background-cropped-version.jpg" background-attachment:fixed;>
-    
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/skill.bars.jquery.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script src="js/jquery.inview.js"></script>
 
 </style>
     <link href="http://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
@@ -353,7 +354,10 @@ img {
   color: rgba(0, 0, 0, 0.4);
 }
 </style>
-<script src="https://raw.github.com/RinayShah/rinayshah.github.io/master/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+</script>
+<script src="jquery-3.3.1.min.js"></script>
 <script>
 	jQuery(document).ready(function() {
   jQuery('.skillbar').each(function() {
